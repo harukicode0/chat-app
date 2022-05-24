@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>ChatApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <%= render "side_bar" %>
-      <%= render "main_chat" %>
+<div class="wrapper">
+  <div class="side_bar">
+    <div class="side_top">
     </div>
-  </body>
-</html>
+    <div class="side_bottom">
+      <%= render "side_bar" %>
+    </div>
+  </div>
+  <div class="chat">
+  <div class="chat_top"></div>
+  <div class="chat_middle"><%= render "main_chat" %></div>
+  <div class="chat_bottom"></div>
+    
+  </div>
+</div>
